@@ -1,5 +1,16 @@
 
 h1 {
-  font-size: 2rem;
-  font-weight: 600;
+	font-family: Open Sans;
+	font-size: 18 px;
+	font-weight: 600;
+	color: blue;
+}
+
+hs {
+	font-family: Open Sans;
+	font-size: 14 px;
+
+body {
+	font-family: Open Sans;
+	font-size: 10 px;
 }
