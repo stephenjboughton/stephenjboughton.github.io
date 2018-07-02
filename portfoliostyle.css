@@ -1,3 +1,39 @@
+html {
+	font-size: 16px;
+  }
+  
+body {
+	font-family: "Raleway";
+  }
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	grid-template-areas:
+	  "header header header"
+	  "mini maxi maxi"
+}
+
+.header {
+  grid-area: header;
+}
+
+.maxi {
+  grid-area: maxi;
+}
+
+.mini {
+  grid-area: mini;  
+}
+
+
+p {
+	font-famil: "Raleway";
+}
+body span {
+	font-weight: bolder;
+}
 
 h1 {
 	font-family: Open Sans;
@@ -6,11 +42,25 @@ h1 {
 	color: blue;
 }
 
-hs {
+h2 {
 	font-family: Open Sans;
 	font-size: 14 px;
+}
 
-body {
-	font-family: Open Sans;
+h3 {
+	font-size: 12 px;
+	font-weight: bold;
+}
+
+h3 span {
+	font-weight: bolder;
+}
+
+h4 {
+	font-size: 11 px;
+	font-weight: bold;
+}
+
+ul {
 	font-size: 10 px;
 }
