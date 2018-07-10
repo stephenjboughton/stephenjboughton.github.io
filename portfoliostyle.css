@@ -7,7 +7,7 @@ body {
   }
 
 .wrapper {
-	padding: 50px;
+	padding: 0px 50px 0px 50px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 25px;
@@ -17,17 +17,33 @@ body {
 }
 
 .header {
-  grid-area: header;
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 25px;
+	grid-template-areas:
+	"info graphic"
 }
 
 .maxi {
   grid-area: maxi;
+  border-left-width: 1px;
+  border-left-color: black;
+  border-left-style: solid;
+  padding-left: 25px;
 }
 
 .mini {
   grid-area: mini;  
 }
 
+.info {
+	grid-area: info;
+}
+
+.graphic {
+	grid-area: graphic;
+}
 
 p {
 	font-family: "Raleway";
@@ -40,11 +56,17 @@ h1 {
 	font-family: Marck Script;
 	font-size: 5rem;
 	color: black;
+	margin: 25px 0 15px 0;
+}
+
+.main-header {
+	padding: 0px 0px -25px 0px;
 }
 
 h2 {
 	font-family: Open Sans;
 	font-size: 12 px;
+	margin: 5px 0 5px 0;
 }
 
 h3 {
@@ -64,3 +86,29 @@ h4 {
 ul {
 	font-size: 9 px;
 }
+
+.graphic > img  {
+	max-height: 40%;
+	position: absolute;
+	top: 0px;
+	right: 150px;
+}
+
+.image-box
+{
+  display: flex;
+	justify-content: space between;
+	margin: 0 0 25px 0;
+}
+
+.image {
+  max-height: 150px;
+  width: auto;
+	display: inline-grid;
+	margin: 0 10px 0 0;
+}
+.image > img {
+    max-height: 150px;
+    width: auto;
+    margin: 0 0 0 0;
+ }
